@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <!-- https://getbootstrap.com -->
+    <!-- link, script -> 구현하는데 필요한 의존성을 연결 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 브라우저(기기) 가로폭에 따라 마진과 width를 조정해주는 클래스 - container -->
+    <main class="container">
+      <section>
+        <h1>안녕하세요 윤형섭입니다.</h1>
+        <p>반갑습니다, 저는 개발이 좋습니다.</p>
+      </section>
+      <!-- 특정한 서식(꾸미기)를 지정하고 싶은 요소(태그)에 class를 집어넣는... -->
+      <!-- 유틸리티 클래스 -> css -> 간단하게 적용 -->
+      <!-- 1. 앞으로의 프로젝트, 회사가 어떠한 CSS 프레임워크를 쓸 지 모름 -->
+      <!-- Bootstrap, TailwindCSS, Mantine, ... -->
+      <!-- 2. 공통적으로 'CSS -> Class'를 서서 적용하는 문법 -->
+      <!-- 3. Ai와 함께 사용을 하면 쉽게, 빠르게 개발 가능 -->
+      <section class="d-flex gap-3 p-3">
+        <div>Java</div>
+        <div>Spring</div>
+        <div>Mysql</div>
+      </section>
+    </main>
+  </body>
+</html>
