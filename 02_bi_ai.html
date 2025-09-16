@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>윤개발의 포트폴리오</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">윤개발</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >소개</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">기술스택</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">프로젝트</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">연락처</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <section id="home" class="text-center my-5">
+        <h1 class="display-4">안녕하세요, 윤개발입니다.</h1>
+        <p class="lead">저는 혁신적인 백엔드 솔루션을 만드는 것을 즐깁니다.</p>
+        <a href="#projects" class="btn btn-primary btn-lg">프로젝트 보기</a>
+      </section>
+
+      <hr />
+
+      <section id="about" class="my-5">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid rounded-circle"
+              alt="프로필 사진"
+            />
+          </div>
+          <div class="col-md-8 d-flex flex-column justify-content-center">
+            <h2 class="mt-4 mt-md-0">소개</h2>
+            <p>
+              저는 5년차 백엔드 개발자로서, 주로 Java와 Spring Boot를 사용하여
+              확장 가능하고 효율적인 시스템을 구축해왔습니다. 클라우드 기술과
+              DevOps에 관심이 많아 AWS, Docker, Kubernetes 등을 학습하고
+              있습니다. 새로운 기술을 배우고 적용하는 것을 좋아하며, 동료들과의
+              협업을 중요하게 생각합니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="skills" class="my-5">
+        <h2 class="text-center mb-4">기술스택</h2>
+        <div class="d-flex flex-wrap justify-content-center">
+          <span class="badge bg-primary m-2 p-2">Java</span>
+          <span class="badge bg-secondary m-2 p-2">Spring Boot</span>
+          <span class="badge bg-success m-2 p-2">JPA</span>
+          <span class="badge bg-danger m-2 p-2">MySQL</span>
+          <span class="badge bg-warning text-dark m-2 p-2">AWS</span>
+          <span class="badge bg-info m-2 p-2">Docker</span>
+          <span class="badge bg-light text-dark m-2 p-2">Git</span>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="projects" class="my-5">
+        <h2 class="text-center mb-4">프로젝트</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">프로젝트 1: 쇼핑몰 백엔드</h5>
+                <p class="card-text">
+                  Spring Boot와 JPA를 이용한 쇼핑몰 백엔드 시스템. 사용자 인증,
+                  상품 관리, 주문 처리 등의 기능을 구현했습니다.
+                </p>
+                <a href="#" class="btn btn-primary mt-auto">자세히 보기</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">프로젝트 2: 예약 시스템 API</h5>
+                <p class="card-text">
+                  RESTful API 기반의 실시간 예약 시스템. MSA 구조를 일부
+                  도입하여 각 서비스를 분리하고 독립적으로 배포할 수 있도록
+                  설계했습니다.
+                </p>
+                <a href="#" class="btn btn-primary mt-auto">자세히 보기</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">프로젝트 3: 개인 블로그</h5>
+                <p class="card-text">
+                  Gatsby와 Netlify를 사용하여 만든 정적 블로그. CI/CD
+                  파이프라인을 구축하여 Git에 푸시하면 자동으로 빌드 및
+                  배포되도록 구성했습니다.
+                </p>
+                <a href="#" class="btn btn-primary mt-auto">자세히 보기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="contact" class="my-5 text-center">
+        <h2>연락처</h2>
+        <p>아래 이메일로 연락주시거나, 깃허브를 방문해주세요.</p>
+        <a href="mailto:yoon.dev@example.com" class="btn btn-outline-primary"
+          >이메일 보내기</a
+        >
+        <a
+          href="https://github.com/example"
+          class="btn btn-outline-secondary"
+          target="_blank"
+          >깃허브 방문하기</a
+        >
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+      <p class="mb-0">&copy; 2025 윤개발. All Rights Reserved.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
